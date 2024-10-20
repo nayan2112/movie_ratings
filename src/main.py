@@ -45,8 +45,10 @@ ratings_df_filtered = ratings_df.join(broadcast(users_df_filtered), "userID")
 #Filter rating table again based on movie released after 1989
 movies_ratings_joined = ratings_df_filtered.join(broadcast(movies_df_filtered), "movieId")
 
+#Unpersisting tables
 movies_df_filtered.unpersist()
 users_df_filtered.unpersist()
+
 
 
 # Group by genre and year, and calculate the average rating
