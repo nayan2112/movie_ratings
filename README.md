@@ -17,4 +17,6 @@ movie_ratings/
 │   └── main.py
 ├── README.md
 ├── requirements.txt
+├── setup.py
 └── .gitignore
+
